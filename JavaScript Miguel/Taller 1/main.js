@@ -1,20 +1,18 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 9
-    //Escribir un programa que calcule el área y el volumen de un cilindro:
-    //V = (PI * r2) * h
-    //A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
+    //Ejercicio 10
+    //Escribir un algoritmo que permita obtener las raíces reales de la ecuación de segundo grado: A * x2 +
+    //b * x + c, siendo X un valor constante.
 
 
-    let v,a,h,r
+    let a,b,c,r1,r2
 
-    r = Number(prompt("Ingrese el radio"))
-    h = Number(prompt("Ingrese la altura"))
+    a = Number(prompt("Ingrese un numero"))
+    b = Number(prompt("Ingrese un numero"))
+    c = Number(prompt("Ingrese un numero"))
 
-    v = Math.PI * Math.pow(r,2 * h)
-    a = (2 * (Math.PI * Math.pow(r,2)) + ((2 * Math.PI * r) * h))
-    
+    r1 = (-b + Math.sqrt(Math.pow(b,2)-4*a*c))/2*a
+    r2 = (-b - Math.sqrt(Math.pow(b,2)-4*a*c))/2*a
 
-    alert(`Volumen: ${v}`)
-    alert(`Area: ${a}`)
+    alert(`Raíces: (${r1},${r2})`)
 })
