@@ -1,17 +1,19 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 4
-    // Escribir un programa que calcule el área de un triángulo:
-    //Base = 7 altura = 4 área del triángulo = (base * altura)/2
+    //Ejercicio 5
+    //Escribir un programa que calcule la longitud y el área de una circunferencia: Radio = 4
+    //Longitud de la circunferencia = 2 * PI * radio
+    //Área de la circunferencia = PI * radio˄2
 
-    let area, base, altura
+    let radio, long,area
 
-    base = Number(prompt("Ingrese la base"))
-    altura = Number(prompt("Ingrese la altura"))
+    radio = Number(prompt("Ingrese el radio"))
+    long = 2*Math.PI*radio
+    area = Math.PI*radio**2
 
-    area = base * altura
 
-    alert(`Area: ${area}`)
+    alert(`Longitud de la circunferencia: ${long}`)
+    alert(`Area de la circnferencia: ${area}`)
 
 
 
