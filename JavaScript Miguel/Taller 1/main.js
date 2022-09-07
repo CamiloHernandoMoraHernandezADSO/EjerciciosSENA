@@ -1,21 +1,20 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 17
-Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del
-producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el
-tiempo y de un producto a otro, este dato se lee por teclado.
-
+    Ejercicio 18
+    Calcular el sueldo de un empleado dados comodatos de entrada: el nombre, hrs. De trabajo y el pago
+en hora. Pagohora=15300
 */
 
-    let costo, iva,r
+    let nombre, horas, pagoHora, sueldo
 
-    costo = Number(prompt("Ingrese el valor del producto"))
-    iva = Number(prompt("Ingrese el IVA"))
+    nombre = prompt("Ingres su nombre")
+    horas = Number(prompt("Ingrese el numero de horas trabajadas"))
+    pagoHora = Number(prompt("Ingrese el valor de la hora"))
+    sueldo = horas * pagoHora
+    alert(`${nombre} gana ${sueldo}`)
 
-    r = costo + iva/100
-    
-    alert(`Valor final: ${r}`)
+
 
 
 })
