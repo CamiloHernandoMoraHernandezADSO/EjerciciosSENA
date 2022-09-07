@@ -1,22 +1,23 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 19
-    Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
-correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5
-puntos.
+    Ejercicio 20
+    Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes
+cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total
+sueldo del vendedor?.
 */
 
-    let ex1,ex2,ex3,ex4,promedio
+   let sldBase,v1,v2,v3, comision,sldTotal
 
-    ex1 = Number(prompt("Ingrese su examen"))
-    ex2 = Number(prompt("Ingrese su examen"))
-    ex3 = Number(prompt("Ingrese su examen"))
-    ex4 = Number(prompt("Ingrese su examen"))
+    sldBase = Number(prompt("Ingrese su sueldo"))
+    v1 = Number(prompt("Ingrese el valor de su venta"))
+    v2 = Number(prompt("Ingrese el valor de su venta"))
+    v3 = Number(prompt("Ingrese el valor de su venta"))
 
-    promedio = (ex1 + ex2 + ex3 + ex4)/4
-    alert(`Promedio: ${promedio}`)
+    comision = (v1 + v2 + v3)*0.10
+    sldTotal = sldBase + comision
 
+    alert(`Su sueldo es de: ${sldTotal}`)
 
 
 })
