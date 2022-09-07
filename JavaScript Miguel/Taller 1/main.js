@@ -1,21 +1,19 @@
-addEventListener("DOMContentLoader", ()=>{
+addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 1
-    //Escribir un programa que calcule el área de un rectángulo:
-    //lado1 = 3 lado2 = 4 área del rectángulo= lado1 * lado2
+    //Ejercicio 3
+    //Un programa que lea 4 números y calcule la media.
+    //Media= (num1 + num2 + num3 + num4)/4 
 
-    let area, lado1, lado2
+    let num1, num2, num3, num4, media
 
-    lado1 = prompt("Ingrese un lado del rectángulo")
-    lado2 = prompt("Ingrese un lado del rectángulo")
+    num1 = Number(prompt("Ingrese un numero"))
+    num2 = Number(prompt("Ingrese un numero"))
+    num3 = Number(prompt("Ingrese un numero"))
+    num4 = Number(prompt("Ingrese un numero"))
 
-    area = lado1 * lado2
+    media = (num1 + num2 + num3 + num4)/4 
 
-    alert(`Area del rectangulo${area}`)
-    
-
-
-
+    alert(`Media: ${media}`)
 
 
 
