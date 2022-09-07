@@ -1,19 +1,21 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 18
-    Calcular el sueldo de un empleado dados comodatos de entrada: el nombre, hrs. De trabajo y el pago
-en hora. Pagohora=15300
+    Ejercicio 19
+    Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
+correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5
+puntos.
 */
 
-    let nombre, horas, pagoHora, sueldo
+    let ex1,ex2,ex3,ex4,promedio
 
-    nombre = prompt("Ingres su nombre")
-    horas = Number(prompt("Ingrese el numero de horas trabajadas"))
-    pagoHora = Number(prompt("Ingrese el valor de la hora"))
-    sueldo = horas * pagoHora
-    alert(`${nombre} gana ${sueldo}`)
+    ex1 = Number(prompt("Ingrese su examen"))
+    ex2 = Number(prompt("Ingrese su examen"))
+    ex3 = Number(prompt("Ingrese su examen"))
+    ex4 = Number(prompt("Ingrese su examen"))
 
+    promedio = (ex1 + ex2 + ex3 + ex4)/4
+    alert(`Promedio: ${promedio}`)
 
 
 
