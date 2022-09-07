@@ -1,13 +1,18 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 7
-    //Escribir un programa que calcule el volumen de una esfera:
-    //Radio = 3 volumen de la esfera = 4/3 * PI * radio˄3
+    //Ejercicio 8
+    //Escribir un programa que evalúe la siguiente expresión:
+    //(a+7*c)/(b+2-a)+2*b
 
-    let volumen, radio
+    let a,b,c,r
 
-    radio = Number(prompt("Ingrese el radio de la esfera"))
-    volumen = 4/3 * Math.PI * Math.pow(radio,3)
+    a = Number(prompt("ingrese un numero"))
+    b = Number(prompt("ingrese un numero"))
+    c = Number(prompt("ingrese un numero"))
 
-    alert(volumen)
+    r = (a+7*c)/(b+2-a)+2*b
+
+    alert(`Resultado ${r}`)
+
+
 })
