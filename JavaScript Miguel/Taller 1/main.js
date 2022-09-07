@@ -1,15 +1,17 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 11
-    //Escribir un programa que calcule el volumen de un elipsoide
-    //V = (4/3) * PI * a * b *c
-    
-    let a,b,c,v
+/*
+    Ejercicio 12
+    Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
+    pesos y un IVA de 20%.
+*/
 
-    a = Number(prompt("Ingrese un numero"))
-    b = Number(prompt("Ingrese un numero"))
-    c = Number(prompt("Ingrese un numero"))
-    v = (4/3) * Math.PI * a * b *c
+    let min,iva, valor
 
-    alert(`Volumen del elipsoide: ${v}`)
+    min = Number(prompt("Ingrese la cantidad de minutos"))
+    iva = 0.20
+    valor = min * 355
+    valor *= iva
+
+    alert(`Costo: ${valor}`)
 })
