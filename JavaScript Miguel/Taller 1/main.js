@@ -1,17 +1,17 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 12
-    Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
-    pesos y un IVA de 20%.
+    Ejercicio 13
+    Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada en
+    kilómetros por hora, proporcione la velocidad en metros por segundos
 */
 
-    let min,iva, valor
 
-    min = Number(prompt("Ingrese la cantidad de minutos"))
-    iva = 0.20
-    valor = min * 355
-    valor *= iva
+let velocidad, r
 
-    alert(`Costo: ${valor}`)
+    velocidad = Number(prompt("Ingrese la velocidad"))
+
+    r = velocidad / 3.6
+
+    alert(`Velocidad ${r}[m/s]`)
 })
