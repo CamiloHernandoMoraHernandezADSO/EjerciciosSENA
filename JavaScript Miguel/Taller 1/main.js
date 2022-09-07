@@ -1,17 +1,18 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 13
-    Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada en
-    kilómetros por hora, proporcione la velocidad en metros por segundos
+    Ejercicio 14
+    Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
+    ingresando el costo de los medicamentos calcules el descuento y el precio final.
 */
 
+    let costo, desc,pFinal
 
-let velocidad, r
+    costo = Number(prompt("Ingrese el valor del medicamento"))
+    desc = costo * 0.10
+    pFinal = costo - desc
 
-    velocidad = Number(prompt("Ingrese la velocidad"))
+    alert(`Precio: ${pFinal}`)
 
-    r = velocidad / 3.6
 
-    alert(`Velocidad ${r}[m/s]`)
 })
