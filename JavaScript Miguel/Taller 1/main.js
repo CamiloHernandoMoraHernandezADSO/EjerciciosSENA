@@ -1,18 +1,16 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 14
-    Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
-    ingresando el costo de los medicamentos calcules el descuento y el precio final.
+    Ejercicio 15
+    Hacer un diagrama para convertir de grados centígrados a grados Fahrenheit.
 */
 
-    let costo, desc,pFinal
+    let gradosC, gradosF
 
-    costo = Number(prompt("Ingrese el valor del medicamento"))
-    desc = costo * 0.10
-    pFinal = costo - desc
+    gradosC = Number(prompt("Ingrese los grados en centigrados"))
 
-    alert(`Precio: ${pFinal}`)
+    gradosF = (gradosC*(9/5))+32
 
+    alert(`Gradis Fahrenheit: ${gradosF}`)
 
 })
