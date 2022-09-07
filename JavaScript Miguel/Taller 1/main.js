@@ -1,21 +1,15 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 5
-    //Escribir un programa que calcule la longitud y el área de una circunferencia: Radio = 4
-    //Longitud de la circunferencia = 2 * PI * radio
-    //Área de la circunferencia = PI * radio˄2
+    //Ejercicio 6
+    //Escribir un programa que calcule la velocidad de un proyectil que recorre 2 Km en 5 minutos. Expresar
+    //el resultado en metros/segundo. Velocidad = distancia/tiempo.
 
-    let radio, long,area
+    let vel, dist=2, tiempo=5,met,segu
 
-    radio = Number(prompt("Ingrese el radio"))
-    long = 2*Math.PI*radio
-    area = Math.PI*radio**2
-
-
-    alert(`Longitud de la circunferencia: ${long}`)
-    alert(`Area de la circnferencia: ${area}`)
-
-
+    met = dist * 1000
+    segu = tiempo * 60
+    vel = met / segu
+    alert(`Velocidad: ${vel}`)
 
 
 })
