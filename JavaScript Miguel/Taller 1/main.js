@@ -1,20 +1,17 @@
 addEventListener("DOMContentLoader", (e)=>{
 
-    //Ejercicio 3
-    //Un programa que lea 4 números y calcule la media.
-    //Media= (num1 + num2 + num3 + num4)/4 
+    //Ejercicio 4
+    // Escribir un programa que calcule el área de un triángulo:
+    //Base = 7 altura = 4 área del triángulo = (base * altura)/2
 
-    let num1, num2, num3, num4, media
+    let area, base, altura
 
-    num1 = Number(prompt("Ingrese un numero"))
-    num2 = Number(prompt("Ingrese un numero"))
-    num3 = Number(prompt("Ingrese un numero"))
-    num4 = Number(prompt("Ingrese un numero"))
+    base = Number(prompt("Ingrese la base"))
+    altura = Number(prompt("Ingrese la altura"))
 
-    media = (num1 + num2 + num3 + num4)/4 
+    area = base * altura
 
-    alert(`Media: ${media}`)
-
+    alert(`Area: ${area}`)
 
 
 
