@@ -13,10 +13,10 @@ addEventListener("DOMContentLoader", ()=>{
     multi = num1 * num2
     divi= num1 / num2
 
-    alert(suma)
-    alert(resta)
-    alert(multi)
-    alert(divi)
+    alert(`Suma: ${suma}`)
+    alert(`Resta: ${resta}`)
+    alert(`Multiplicacion: ${multi}`)
+    alert(`División: ${divi}`)
 
 
 
