@@ -1,22 +1,18 @@
 addEventListener("DOMContentLoader", ()=>{
 
     //Ejercicio 1
-    //Escribir un programa que sume, reste, multiplique y divida dos números
+    //Escribir un programa que calcule el área de un rectángulo:
+    //lado1 = 3 lado2 = 4 área del rectángulo= lado1 * lado2
+
+    let area, lado1, lado2
+
+    lado1 = prompt("Ingrese un lado del rectángulo")
+    lado2 = prompt("Ingrese un lado del rectángulo")
+
+    area = lado1 * lado2
+
+    alert(`Area del rectangulo${area}`)
     
-    let suma, resta, multi,divi
-    let num1 = Number(prompt("Ingrese un numero"))
-    let num2 = Number(prompt("Ingrese un numero"))
-
-
-    suma = num1 + num2
-    resta = num1 - num2
-    multi = num1 * num2
-    divi= num1 / num2
-
-    alert(`Suma: ${suma}`)
-    alert(`Resta: ${resta}`)
-    alert(`Multiplicacion: ${multi}`)
-    alert(`División: ${divi}`)
 
 
 
