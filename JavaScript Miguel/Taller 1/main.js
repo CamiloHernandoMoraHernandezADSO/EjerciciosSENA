@@ -1,21 +1,27 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 21
-    Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución, 
-    por favor utilizar funciones matemáticas de Python para ello
-    d = rc((x2-x1)^2 + (y2-y1)^2)
+    Ejercicio 22
+    Pablo compro 5 productos los dos primeros con un 5% de descuento y los 2 últimos con un 2% de 
+    descuento, realice un algoritmo que indique cuanto fue el valor a pagar por cada producto y el total 
+    de la compra.
+
 */
 
-   let d,x1,x2,y1,y2
+    let p1,p2,p3,p4,p5,total
 
-    x1 = Number(prompt("Ingrese x1"))
-    x2 = Number(prompt("Ingrese x2"))
-    y1 = Number(prompt("Ingrese y1"))
-    y2 = Number(prompt("Ingrese y2"))
+    p1 = Number(prompt("Ingrese el valor del producto"))
+    p2 = Number(prompt("Ingrese el valor del producto"))
+    p3 = Number(prompt("Ingrese el valor del producto"))
+    p4 = Number(prompt("Ingrese el valor del producto"))
+    p5 = Number(prompt("Ingrese el valor del producto"))
 
-    d = Math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    let desc1 = p1 - p1 * 0.05
+    let desc2 = p2 - p2 * 0.05
+    let desc4 = p4 - p4 * 0.02
+    let desc5 = p5 - p5 * 0.02
 
-    alert(`La distancia entre los puntos es: ${d}`)
+    total = desc1 + desc2 + desc4 + desc5 + p3
 
+    alert(`El total a pagar es: ${total}`)
 })
