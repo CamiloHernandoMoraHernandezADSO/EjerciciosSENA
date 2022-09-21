@@ -1,23 +1,21 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 24
+    Ejercicio 25
 
-    Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por 
-    $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le 
-    sobran $91000. ¿cuánto dinero tenía?
+   En el programa de cocina de “Doña Anita” han dado la receta para la preparación de bizcocho especial 
+    de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de 
+    nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina para 
+    hacer el bizcocho es
 */
-    let llaves,bombas,pernos,cambio,total
 
-    llaves = 11500 * 3
-    bombas = 116800
-    pernos = 87000
-    cambio = 91000
+    let cocho,harina
 
-    total = llaves + bombas + pernos + cambio
+    choco = 20
+    harina = 100
 
-    alert(`Total de dinero: ${total}`)
-    
+    let total = harina * choco
 
+    alert(`La cantidad de harina necesaria es ${total}`)
 
 })
