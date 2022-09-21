@@ -1,23 +1,21 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 20
-    Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes
-cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total
-sueldo del vendedor?.
+    Ejercicio 21
+    Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución, 
+    por favor utilizar funciones matemáticas de Python para ello
+    d = rc((x2-x1)^2 + (y2-y1)^2)
 */
 
-   let sldBase,v1,v2,v3, comision,sldTotal
+   let d,x1,x2,y1,y2
 
-    sldBase = Number(prompt("Ingrese su sueldo"))
-    v1 = Number(prompt("Ingrese el valor de su venta"))
-    v2 = Number(prompt("Ingrese el valor de su venta"))
-    v3 = Number(prompt("Ingrese el valor de su venta"))
+    x1 = Number(prompt("Ingrese x1"))
+    x2 = Number(prompt("Ingrese x2"))
+    y1 = Number(prompt("Ingrese y1"))
+    y2 = Number(prompt("Ingrese y2"))
 
-    comision = (v1 + v2 + v3)*0.10
-    sldTotal = sldBase + comision
+    d = Math.sqrt((x2-x1)**2 + (y2-y1)**2)
 
-    alert(`Su sueldo es de: ${sldTotal}`)
-
+    alert(`La distancia entre los puntos es: ${d}`)
 
 })
