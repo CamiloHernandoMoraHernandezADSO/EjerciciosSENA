@@ -1,19 +1,21 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 26
-    Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿ Cuántos Kg 
-    transporta ?
+    Ejercicio 27
+    Tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma 
+    2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a 
+    Lorena?
+
 
 */
 
-    let peso, cajas
-    peso = 748
-    cajas = 25
+    let total, martin, jairo, lorena
 
-    let total = peso * cajas
+    total = 1
+    martin = 2/3
+    jairo = 1/4
+    lorena = 1-martin - jairo
     
-    alert(`El total de kg es: ${total}`)
-
+    alert(`A Lorena le tocó ${lorena}`)
 
 })
