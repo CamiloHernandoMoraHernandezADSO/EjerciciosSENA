@@ -1,27 +1,23 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 23
-    Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un 
-    depósito.
-    • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo). 
-    • Volumen = PI *(radio^2)* H (altura del depósito)
-    • El tiempo se encuentra en minutos.
-    • Normalmente se mide el volumen en litros y el tiempo en segundos.
+    Ejercicio 24
+
+    Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por 
+    $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le 
+    sobran $91000. ¿cuánto dinero tenía?
 */
+    let llaves,bombas,pernos,cambio,total
 
+    llaves = 11500 * 3
+    bombas = 116800
+    pernos = 87000
+    cambio = 91000
+
+    total = llaves + bombas + pernos + cambio
+
+    alert(`Total de dinero: ${total}`)
     
-    let q,v,t,r,h
-
-    q = Number(prompt("Ingrese el valor del caudal"))
-    r = Number(prompt("Ingrese el radio"))
-    h = Number(prompt("Ingrese la altura"))
-
-    v = Math.PI()*r**2*h
-    t = v/q
-
-    alert(`El tiempo estimado en que se llena el caudal es: ${t} `)
-
 
 
 })
