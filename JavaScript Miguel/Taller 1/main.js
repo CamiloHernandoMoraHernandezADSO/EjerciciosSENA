@@ -1,21 +1,18 @@
 addEventListener("DOMContentLoader", (e)=>{
 
 /*
-    Ejercicio 27
-    Tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma 
-    2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a 
-    Lorena?
-
-
+    Ejercicio 28
+    Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que 
+    se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando 
+    presupuestos para cada cliente.
 */
 
-    let total, martin, jairo, lorena
+    let m2, costo, total
 
-    total = 1
-    martin = 2/3
-    jairo = 1/4
-    lorena = 1-martin - jairo
-    
-    alert(`A Lorena le tocó ${lorena}`)
+    m2 = Number(prompt("Ingrese la cantidad de m²"))
+    costo = Number(prompt("Ingrese el costo el trabajo"))
+    total = m2 * costo
+
+    alert(`El costo del trabajo es:  ${total}`)
 
 })
