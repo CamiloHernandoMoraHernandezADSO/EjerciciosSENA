@@ -2,35 +2,25 @@ addEventListener("DOMContentLoaded", (e)=>{
 
 /* 
 
-Ejercicio 3
-    Desarrollar un diagrama que lea 3 valores diferentes e indique cual es el mayor de ellos, el menor o
-    si son iguales.
+Ejercicio 5
+    Escriba un algoritmo que calcule el área de un rectángulo siempre y cuando los lados sean positivos:
+    área triangulo= lado * lado.
+
 */
 
-    let num1, num2,num3
+    let area, lado1,lado2
 
-    num1 = Number(prompt("Ingrese un número"))
-    num2 = Number(prompt("Ingrese un número"))
-    num3 = Number(prompt("Ingrese un número"))
+   lado1 = Number(prompt("Ingrese el lado 1"))
+   lado2 = Number(prompt("Ingrese el lado 2"))
 
-    if(num1 > num2 && num1 > num3){
-        alert(`${num1} es mayor que ${num2} y ${num3}`)
-    }else if(num1 < num2 && num1 < num3){
-        alert(`${num1} es menor que ${num2} y ${num3}`)
+    if(lado1 > 0 && lado2 > 0){
+        area = lado1 * lado2
+        alert(`El área es ${area}`)
     }
-    if(num2 > num1 && num2 > num3){
-        alert(`${num2} es mayor que ${num1} y ${num3}`)
-    }else if(num2 < num1 && num2 < num3){
-        alert(`${num2} es menor que ${num1} y ${num3}`)
-    }
-    if(num3 > num2 && num3 > num1){
-        alert(`${num3} es mayor que ${num1} y ${num2}`)
-    }else if(num3 < num2 && num3 < num1){
-        alert(`${num3} es menor que ${num1} y ${num2}`)
-    }
-    if(num1 == num2 || num1 == num3 || num2 == num3){
-        alert(`Hay números iguales`)
+    else{
+        alert("Algunos de los lados no es positivo.")
+
     }
 
-
+    
 });
