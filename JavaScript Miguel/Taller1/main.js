@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoader", (e)=>{
+addEventListener("DOMContentLoaded", (e)=>{
 
 /*
     Ejercicio 30
